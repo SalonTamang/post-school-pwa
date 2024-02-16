@@ -19,24 +19,7 @@
 
 <body>
 
-    <div id="app">
-        <header>
-            <h1 v-text="sitename"></h1>
-            <strong class="test-elemen">HTTPS link: </strong>
-            <a v-bind:href="serverURL" target="_blank">link</a>
-            <button @click="deleteAllCaches" class="test-elem">
-                <span class="fas fa-trash"></span>
-                Delete All Caches
-            </button>
-            <button @click="unregisterAllServiceWorkers" class="test-elem">
-                <span class="fab fa-uniregistry"></span>
-                Unregister All ServiceWorkers
-            </button>
-            <button @click="reloadPage" class="test-elem">
-                <span class="fas fa-sync"></span>
-                Reload Page
-            </button>
-        </header>
+    <div id="app">    
         <nav class="toolbar-container">
             <center>
                 <h1 style="font-size: 2rem;" v-text="sitename"></h1>
@@ -63,8 +46,23 @@
                 </button>
             </div>
         </nav>
-
-
+<br>
+        <header>
+            <strong class="test-elemen">HTTPS link: </strong>
+            <a v-bind:href="serverURL" target="_blank">link</a>
+            <button @click="deleteAllCaches" class="test-elem">
+                <span class="fas fa-trash"></span>
+                Delete All Caches
+            </button>
+            <button @click="unregisterAllServiceWorkers" class="test-elem">
+                <span class="fab fa-uniregistry"></span>
+                Unregister All ServiceWorkers
+            </button>
+            <button @click="reloadPage" class="test-elem">
+                <span class="fas fa-sync"></span>
+                Reload Page
+            </button>
+        </header>
         <section class="mainContainer" v-if="showProduct">
             <div class="sortContainer flex-shrink-1 p-4">
                 <!-- Sorting -->
