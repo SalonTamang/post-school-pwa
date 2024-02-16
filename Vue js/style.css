@@ -41,7 +41,10 @@ body{
     margin: 0 10px;
 }
 
-
+.images{
+    width: 40%;
+    height: 50%;
+}
 
 .toolbar-container {
     display: flex;
